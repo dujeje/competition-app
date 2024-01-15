@@ -1,44 +1,20 @@
-<<<<<<< HEAD
-# competition-app
-=======
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Round-Robin Competition Tracker
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+This web application is designed to facilitate the organization and tracking of round-robin competitions. Users can create and manage competitions, enter competitors, select scoring systems, and update results, with the application automatically generating schedules and standings.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Competition Creation**: Users can create a competition by specifying its name, a list of competitors (separated by semicolon), and choosing a scoring system (e.g., 3/1/0 for soccer, 1/0.5/0 for chess).
+- **Automatic Schedule Generation**: The application generates a complete schedule for the competition, without the need for manual input.
+- **Result Entry and Management**: The creator of the competition can enter and update results, which automatically recalculates the standings.
+- **Public Access to Results**: Each competition has a unique, publicly accessible link for viewing current standings and results.
+- **User Authentication**: User authentication is managed via OpenId Connect (OIDC) and Auth0 service.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Current Progress
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- **Implemented**: User login functionality and the ability to create competitions.
+- **To-Do**: Further development on result management and public access features.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
->>>>>>> 12822a2 (final)
+Available at [Competition Tracker](https://competition-app-wheat.vercel.app/)
